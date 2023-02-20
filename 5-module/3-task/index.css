@@ -1,5 +1,5 @@
 .carousel {
-  height: var(--carousel-height);
+  height: 390px;
   position: relative;
   overflow: hidden;
 }
@@ -95,6 +95,10 @@
   height: 70px;
 }
 
+.carousel__arrow_hidden {
+  display: none;
+}
+
 .carousel__arrow_right {
   right: 0;
 }
@@ -149,4 +153,13 @@
     left: 0;
     transform: none;
   }
+}
+
+
+.transformAnimation {
+  transition: .4s all ease-in-out
+}
+
+.hide-button{
+  opacity: 0;
 }

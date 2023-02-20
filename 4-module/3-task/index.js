@@ -27,10 +27,10 @@ function highlight(table) {
 
           if (cIdx === statusIndex) {
             if (tableCellElement.dataset.hasOwnProperty('available')) {
-              if (tableCellElement.dataset.available="true") {
+              if (tableCellElement.dataset.available === "true") {
                 tableRowElement.classList.add('available')
               }
-              if (tableCellElement.dataset.available="false") {
+              if (tableCellElement.dataset.available === "false") {
                 tableRowElement.classList.add('unavailable')
               }
             } else {
@@ -51,14 +51,10 @@ function highlight(table) {
             if (parseInt(tableCellElement.innerText) < 18) {
               tableRowElement.style="text-decoration: line-through"
             }
+          }
 
       
-      });
+        });
     
     });
-   /* найти ячейку Age через .children[1] */
-   /* const genderMale = document.querySelector() */
 }
-let table = document.querySelector('.js-teachers');
-  highlight(table)
-
